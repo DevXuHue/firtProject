@@ -9,12 +9,14 @@
     }
     .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
     }
     .socials-list {
         font-size: 48px;
     }
     .contact-info {
         line-height: 2;
+    
     }
     
     #footer .socials-list a {
@@ -36,7 +38,7 @@
     }
 }
 /* Moblie */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .s-full-width,.s-col-full {
         width: 100% !important;
     }
