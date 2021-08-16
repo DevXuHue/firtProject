@@ -74,8 +74,9 @@ html{
     border:none;
     text-align: center;
     appearance: none;
+    -webkit-appearance: none;
 }
--webkit-appearance: none;
+
 .btn:hover{
     color: #000;
     background-color: #ccc;
@@ -398,6 +399,7 @@ nav, .subnav{
     min-height: 200px;
     position: relative;
     max-width: calc(100%-32px);
+    animation: modalFadeIn ease 0.5s;
 }
 .modal-header {
     background: #009968;
@@ -454,4 +456,14 @@ nav, .subnav{
 .modal-footer a{
     color:#2196F3 ;
 }
-
+/* tạo ra những chuyển động của tĩnh  */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
